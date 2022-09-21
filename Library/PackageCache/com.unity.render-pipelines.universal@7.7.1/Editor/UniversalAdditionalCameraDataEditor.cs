@@ -1,19 +1,3 @@
-using UnityEngine.Rendering.Universal;
-
-namespace UnityEditor.Rendering.Universal
-{
-    [CanEditMultipleObjects]
-    // Disable the GUI for additional camera data
-    [CustomEditor(typeof(UniversalAdditionalCameraData))]
-    class UniversalAdditionalCameraDataEditor : Editor
-    {
-        public override void OnInspectorGUI()
-        {
-        }
-        [MenuItem("CONTEXT/UniversalAdditionalCameraData/Remove Component")]
-        static void RemoveComponent(MenuCommand command)
-        {
-            EditorUtility.DisplayDialog("Component Info", "You can not delete this component, you will have to remove the camera.", "OK");
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f4f6327664fec84bd050933cc1bf2ea2b3b6a4edbad8881fc683e79928a55276
+size 649

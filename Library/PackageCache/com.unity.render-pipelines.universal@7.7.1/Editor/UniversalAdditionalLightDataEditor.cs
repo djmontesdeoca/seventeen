@@ -1,23 +1,3 @@
-using UnityEngine.Rendering.Universal;
-using UnityEngine.Scripting.APIUpdating;
-
-namespace UnityEditor.Rendering.Universal
-{
-    [CanEditMultipleObjects]
-    [CustomEditor(typeof(UniversalAdditionalLightData))]
-    [MovedFrom("UnityEditor.Rendering.LWRP")] public class UniversalAdditionLightDataEditor : Editor
-    {
-        public override void OnInspectorGUI()
-        {
-        }
-
-        [MenuItem("CONTEXT/LWRPAdditionalLightData/Remove Component")]
-        static void RemoveComponent(MenuCommand command)
-        {
-            if (EditorUtility.DisplayDialog("Remove Component?", "Are you sure you want to remove this component? If you do, you will lose some settings.", "Remove", "Cancel"))
-            {
-                Undo.DestroyObjectImmediate(command.context);
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:346f797251a7dba063a4956761f0fb134f92b0f7116e0fd7fdbb67767dc495f5
+size 808
